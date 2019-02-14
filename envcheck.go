@@ -11,6 +11,6 @@ func GetEnv(key, fallback string) string {
 		return value
 	}
 	// If the environment variable is not found utilise the default and throw a warning
-	log.Println("Warning. Enviroment variable '%s' was not found. Falling back to the default value '%s'", key, fallback)
+	log.Printf("Warning. Enviroment variable '%s' was not found. Falling back to the default value '%s'", key, fallback)
 	return fallback
 }
